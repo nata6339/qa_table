@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>FORM</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+    </style>
+</head>
+<body>
+<div class="feed">
+    <form  id="form" class="feed-form" action="#">
+        <label for="name">Введите имя: </label><input class="input" id="name" name="name" placeholder="Имя" type="text"
+        title="Не более 8-ми символов" minlength="2" maxlength="8">
+        <br><br>
+
+        <label for="surname">Введите фамилию: </label><input class="input" id="surname" name="surname" placeholder="Фамилия" type="text"
+        title="Не более 10-ти символов" minlength="2" maxlength="10">
+        <br><br>
+
+        <label for="age">Ваш возраст: </label><input class="input" id="age" name="age" placeholder="Возраст" type="number">
+        <br><br>
+
+        <label for="email">Введите электронный адрес:</label> <input class="input" id="email" placeholder="Email"
+        type="email">
+        <br><br>
+
+        <p>Ваш пол: <br><br>
+            <label for="male">Мужской </label><input id="male" name="gender" type="radio">
+            <label for="female">Женский </label><input id="female" name="gender" type="radio"></p>
+        <br>
+
+        <label for="address">Введите адрес: </label><input class="input" id="address" placeholder="Ваш адрес" type="text">
+        <br><br>
+
+        <label for="date">Введите дату рождения: </label> <input class="input" id="date" name="date"
+        placeholder="Дата рождения" type="date">
+        <br><br>
+
+        <label for="phone">Введите номер телефона: </label> <input class="input" id="phone" placeholder="Номер телефона"
+        pattern="([0-9]){3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" type="tel" title="Формат: (095)-12-34-567">
+        <br><br>
+
+        <label for="pass">Пароль:</label> <input class="input" id="pass" placeholder="Ваш пароль" type="password" title="Ваш пароль должен содержать не менее 6 символов" minlength="6">
+        <br><br>
+
+        <button id="btn" class="button" type="submit">РЕГИСТРАЦИЯ</button>
+    </form>
+</div>
+</body>
+</html>
